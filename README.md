@@ -23,8 +23,6 @@ The **Face Recognition Attendance System** is a project designed to automate att
   - `OpenCV`
   - `PyQt`/`PySide` for GUI
   - `smtplib` for email notifications
-- **Web Technologies:** HTML, CSS, JavaScript (for local website viewing class schedules)
-- **Server:** Apache
 
 ## Setup and Installation
 
@@ -47,6 +45,8 @@ The **Face Recognition Attendance System** is a project designed to automate att
    ```bash
    streamlit main-streamlit.py
    ```
+   or u can click the run.bat instead
+   
 
 Usage
 
