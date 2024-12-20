@@ -1,0 +1,209 @@
+
+/* General Styles */
+body {
+    background-color: #c2c2c2; /* Light background for the application */
+    color: #000000; /* Dark gray text for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    animation: fadeIn 1.5s ease-out; /* Smooth fade-in effect */
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: #020702; /* Green background */
+    color: white;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    padding-left:2cap;
+    padding-top: 1cap;
+}
+
+.stButton>button:hover {
+    background-color: #426dc4; /* Darker green */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px); /* Lift effect */
+}
+
+.stButton>button:active {
+    transform: translateY(2px); /* Pressed effect */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stMainBlockContainer {
+    background-color: #f3f3f3;
+    color:#000000
+
+
+}
+
+
+p {
+    color: #ff1717;
+}
+/* Headings */
+h1 {
+    color: #333333;
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-family: 'Cursive', sans-serif;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #4CAF50; /* Change color on hover */
+    text-shadow: 3px 3px 12px rgba(0, 123, 255, 0.2);
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Dark text */
+    padding: 20px;
+    border-right: 3px solid #4CAF50; /* Green border */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 15px 15px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section[data-testid="stSidebar"]:hover {
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Slight enlargement on hover */
+}
+
+section[data-testid="stSidebar"] h2 {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.1);
+}
+
+/* Input Fields */
+.stTextInput input {
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #cccccc;
+    color: #825b5b;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.stTextInput input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 12px rgba(76, 175, 80, 0.4); /* Green glow effect */
+}
+
+.stTextInput label {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Success and Warning Messages */
+.stSuccess {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 14px;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.stWarning {
+    background-color: #ffc107; /* Yellow */
+    color: #d9534f; /* Red text */
+    padding: 14px;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effects for alerts */
+.stSuccess:hover, .stWarning:hover {
+    transform: scale(1.02); /* Slight enlargement */
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-top: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4CAF50;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 12px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #666666;
+    font-size: 14px;
+    border-top: 1px solid #eaeaea;
+    margin-top: 20px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+footer:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.02);
+}
+
+/* Application Footer */
+footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
