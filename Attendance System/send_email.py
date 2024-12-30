@@ -18,8 +18,8 @@ CSV_FOLDER = "csv/."  # Assuming the CSV is in the current directory
 # Email configuration
 SMTP_HOST = "smtp-mail.outlook.com"
 SMTP_PORT = 587
-FROM_EMAIL = "1028401@bcas.ac"
-EMAIL_PASSWORD = "Azeeman@1233"  # App password
+FROM_EMAIL = "" #email
+EMAIL_PASSWORD = ""  # password
 
 
 def get_todays_csv_filename():
