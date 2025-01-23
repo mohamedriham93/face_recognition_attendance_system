@@ -18,7 +18,7 @@ CSV_FOLDER = "csv/."  # Assuming the CSV is in the current directory
 # Email configuration
 SMTP_HOST = "smtp-mail.outlook.com"
 SMTP_PORT = 587
-FROM_EMAIL = "" #email
+FROM_EMAIL = "" # outlook email
 EMAIL_PASSWORD = ""  # password
 
 
